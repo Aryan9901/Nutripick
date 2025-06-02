@@ -5,7 +5,7 @@ import type { FoodAnalysisResult } from "@/types/food";
 import { indianFoodData } from "@/data/indian-food-data";
 import axios from "axios";
 
-const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || "http://localhost:4000";
+const API_BASE_URL = "https://nutripick.onrender.com";
 
 // Calculate health score for Indian dishes
 const calculateHealthScore = (item: any): number => {
